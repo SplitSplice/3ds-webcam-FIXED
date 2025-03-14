@@ -9,6 +9,8 @@ To run, you must have OBS studio with virtual cam and run this in a command prom
 
 ```pip install sounddevice, qoi, pyvirtualcam```
 
+# THE MICROPHONE STREAMING OPTION DOES NOT WORK!
+
 ## Usage
 
 Launch the 3DSX from the Homebrew Menu on your console, set it up how you want (microphone/camera/both)  
