@@ -14,13 +14,4 @@ To run, you must have OBS studio with virtual cam and run this in a command prom
 Launch the 3DSX from the Homebrew Menu on your console, set it up how you want (microphone/camera/both)  
 Start the connection  
 Run the script with your console's IP address as the only command-line argument  
-When you want to stop, stop the connection on your console or exit directly.  
-  
-WARNING: The instructions mention push-to-talk, but it's not implemented yet!
-
-## License
-
-This project is licensed under the MIT license.  
-Uses a modified version of [the QOI library](https://github.com/phoboslab/qoi/blob/master/qoi.h), which is under the MIT.  
-Uses my `ctr_thread.h` public domain header-only std::thread replacement for libctru.  
-Uses various images from wikimedia (or hand made by me) in the `gfx` folder (public domain).
+When you want to stop, stop the connection on your console or exit directly.
