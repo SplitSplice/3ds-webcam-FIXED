@@ -9,7 +9,9 @@ To run, you must have OBS studio with virtual cam and run this in a command prom
 
 ```pip install sounddevice, qoi, pyvirtualcam```
 
-# THE MICROPHONE STREAMING OPTION DOES NOT WORK!
+# JUST REALIZED MY ERROR WAS ON MY END ONLY.
+This fork will now be used for uploading builds due to the original repo not having releases.
+
 
 ## Usage
 
