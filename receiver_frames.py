@@ -34,7 +34,8 @@ except Exception as e:
 # blksz = 32730//15
 blksz = 3072
 previous_audio = b""
-with sounddevice.OutputStream(samplerate=32728, channels=2,blocksize=blksz, device="VoiceMeeter Input (VB-Audio Voi, MME") as ros, pyvirtualcam.Camera(width=scr_w, height=scr_h, fps=20, device="OBS Virtual Camera", backend='obs') as cam:
+
+with pyvirtualcam.Camera(width=scr_w, height=scr_h, fps=60, device="OBS Virtual Camera", backend="obs") as cam:
 	try:
 		dt = np.dtype('<i2')
 		while True:
@@ -91,7 +92,6 @@ with sounddevice.OutputStream(samplerate=32728, channels=2,blocksize=blksz, devi
 					idx = i * blksz
 					tow = samps[idx:idx+blksz]
 					tow = np.column_stack((tow, np.zeros_like(tow)))
-					ros.write(tow.astype(dtype=np.float32))
 
 				if r:
 					previous_audio = data[(datalen - (r * 2)):datalen]
